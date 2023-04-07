@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.svg" />
+    <script src="js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <script src="/js/jquery-3.6.0.js"></script>
+    <title>Le Panier Des Saveurs :: Acceuil</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="header-flexes">
+          <div class="icons-hover">
+            <i id="menu-btn" class="fa-solid fa-bars fa-xl"></i>
+          </div>
+        </div>
+        <div id="logo-container">
+          <a href="index.html"
+            ><img id="logo" src="images/logo-b.png" height="150px"
+          /></a>
+        </div>
+        <div class="header-flexes right-side">
+          <i id="basket-shopping" class="fa-solid fa-basket-shopping fa-xl"></i>
+          <a id="order-btn" href="#">Order</a>
+          <i id="search-icon" class="fa-solid fa-magnifying-glass fa-xl"></i>
+          <input
+            id="search-bar"
+            type="search"
+            placeholder="Search.."
+            disabled
+          />
+          <div id="search-board"></div>
+        </div>
+      </div>
+    </header>
+    <div id="menu">
+      <a onclick="filter('fruit')">Fruits</a>
+      <a onclick="filter('vegetable')">Vegetables</a>
+      <a onclick="filter('dairy')">Dairy</a>
+      <a onclick="filter('bakery')">Bakery</a>
+    </div>
+
+    <div id="cart">
+      <div id="head-cart">
+        <h1>CART</h1>
+        <div id="mad" class="price">
+          Total to pay :
+          <span id="total">0</span> MAD
+        </div>
+      </div>
+      <br />
+
+      <table id="cart-table">
+        <thead>
+          <th>item</th>
+          <th>price UTTC</th>
+          <th>quantity</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <article id="front-page">
+      <h1>Order groceries for delivery or pickup today</h1>
+
+      <p>Whatever you want from local stores, brought right to your door.</p>
+      <div id="round-illustration">
+        <img
+          src="images/casual-life-3d-girl-grocery-bag.png"
+          alt="Fast Delivery with LePanierDesSaveurs.ma"
+        />
+      </div>
+    </article>
+
+    <article id="info-box">
+      <span id="info-header"
+        ><span id="moroccan">The 1st Moroccan</span> Grocery delivery you can
+        count on</span
+      >
+      <div id="infos">
+        <div class="info">
+          <div class="info-card">
+            <h1>Choose what you want</h1>
+            <p>
+              Select items from your favorite grocery stores at
+              LePanierDesSaveurs.ma or in the app*. *(soon).
+            </p>
+          </div>
+          <div class="info-img">
+            <img src="images/hamza-nouasria-q11NM0cFFzY-unsplash.jpg" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-card">
+            <h1>See real-time updates</h1>
+            <p>
+              Personal shoppers pick items with care. Chat as they shop and
+              manage your order.
+            </p>
+          </div>
+          <div class="info-img">
+            <img src="images/docusign-uI-fScjuXnI-unsplash.jpg" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-card">
+            <h1>Get your items same-day</h1>
+            <p>
+              Pick a convenient time for you. Enjoy Instacart’s 100% quality
+              guarantee on every order.
+            </p>
+          </div>
+          <div class="info-img">
+            <img src="images/maja-petric-vGQ49l9I4EE-unsplash.jpg" />
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <section>
+      <h1 id="main-title">All Products</h1>
+      <div id="market"></div>
+    </section>
+
+    <img id="wave" src="/images/wave.png" />
+
+    <footer>
+      <div id="logo-footer-c">
+        <img src="/images/logo-w.png" />
+        <h1 id="sub">The easiest Moroccan way to make shopping online.</h1>
+      </div>
+      <div class="subscribe">
+        <h1>KEEP UP TO DATE WITH OUR MARKET NEWS</h1>
+        <p>with our hand-crafted newsletter</p>
+        <input type="email" /><button type="submit">SUBSCRIBE</button>
+      </div>
+      <div class="footer-menu">
+        <div class="footer-menu-item">
+          <h2><a onclick="filter('fruit')">Fruits</a></h2>
+          <p>Fresh fruits from our farms to your table.</p>
+        </div>
+        <div class="footer-menu-item">
+          <h2><a onclick="filter('vegetable')">Vegetables</a></h2>
+          <p>
+            A good and tasty Tajine's secret is fresh vegetables. We always make
+            sure to bring the best to you from our green famrs.
+          </p>
+        </div>
+        <div class="footer-menu-item">
+          <h2><a onclick="filter('vegetable')">Vegetables</a></h2>
+          <p>
+            A good and tasty Tajine's secret is fresh vegetables. We always make
+            sure to bring the best to you from our green famrs.
+          </p>
+        </div>
+        <div class="footer-menu-item">
+          <h2><a onclick="filter('dairy')">Dairy</a></h2>
+          <p>Dairy For Strong Bodies and For Strong Minds.</p>
+        </div>
+        <div class="footer-menu-item">
+          <h2><a onclick="filter('dairy')">Dairy</a></h2>
+          <p>Dairy For Strong Bodies and For Strong Minds.</p>
+        </div>
+        <div class="footer-menu-item">
+          <h2><a onclick="filter('bakery')">Bakery</a></h2>
+          <p>The best bread under the sky.</p>
+        </div>
+      </div>
+      <div id="copyright">
+        <div>All Rights Reserved Ⓒ <a>www.lepanier.ma</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="app.js" async></script>
